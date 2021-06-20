@@ -1,9 +1,9 @@
-import './styles.module.css';
+import styles from './styles.module.css';
 
 const Tickets = () => {
   return (
-    <div>
-      App
+    <div className={styles.TicketsWrapper}>
+      Tickets
     </div>
   );
 };
