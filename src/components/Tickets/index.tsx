@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { setTickets } from '../../app/ticketsSlice';
 import { ITicket } from '../../app/types';
-import fetchTickets from '../../data/fetchTickets';
+import fetchTickets from '../../api/fetchTickets';
 import Ticket from '../Ticket';
 import styles from './styles.module.css';
 const Tickets = () => {
