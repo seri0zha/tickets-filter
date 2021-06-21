@@ -1,10 +1,12 @@
 import Currency from './Currency';
 import Stops from './Stops';
+import '../../index.css';
 import styles from './styles.module.css';
+
 
 const Filters = () => {
   return (
-    <div className={styles.FiltersGridWrapper}>
+    <div className={"gridFilters"}>
       <div className={styles.FiltersWrapper}>
         <Currency/>
         <Stops/>

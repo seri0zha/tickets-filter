@@ -6,6 +6,8 @@ import fetchTickets from '../../api/fetchTickets';
 import Ticket from '../Ticket';
 import styles from './styles.module.css';
 import applyFilters from '../../api/applyFilters';
+import '../../index.css';
+
 const Tickets = () => {
 
   // filter and sort tickets
@@ -21,7 +23,7 @@ const Tickets = () => {
   }, []);
 
   return (
-    <div className={styles.TicketsWrapper}>
+    <div className={styles.TicketsWrapper + " gridTickets"}>
       {tickets.map((ticket: ITicket) => 
         <Ticket ticket={ticket}/>)}
     </div>

@@ -1,5 +1,4 @@
+
 .TicketsWrapper {
-  grid-area: tickets;
-  display: grid;
   grid-gap: 20px;
 }
