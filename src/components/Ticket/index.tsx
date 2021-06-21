@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { ITicket } from "../../app/types";
+import PurchaseButton from "./PurchaseButton";
 import styles from "./styles.module.css";
 
 interface TicketProps {
@@ -8,9 +9,13 @@ interface TicketProps {
 
 const Ticket: FC<TicketProps> = ({ticket}) => {
   return (
-    <div 
-      className={styles.TicketWrapper}>
-      {Object.keys(ticket).map(key => <div>{ticket[key as keyof ITicket]}</div>)}
+    <div className={styles.TicketWrapper}>
+      <div className={styles.PurchaseSection}>
+        <PurchaseButton price={ticket.price}/>
+      </div>
+      <div className={styles.InfoSection}>
+        
+      </div>
     </div>
   )
 };
