@@ -9,7 +9,7 @@ const Currency = () => {
   return (
     <>
       <Title>ВАЛЮТА</Title>
-      <div className={styles.FiltersWrapper}>
+      <div className={styles.CurrencySelectionWrapper}>
       {currencyList.map(curr => <SelectButton currency={curr}/>)}
     </div>
     </>
