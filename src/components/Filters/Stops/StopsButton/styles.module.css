@@ -1,7 +1,16 @@
-.selected {
-  background-color: aqua;
-}
 .button {
+  background-color: white;
   width: 100%;
   border: 0;
+  text-align: left;
+  padding: 5px 15px;
+}
+
+.selected {
+  color: #2196f3;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #f1fcff;
 }
