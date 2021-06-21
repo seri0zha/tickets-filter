@@ -1,5 +1,8 @@
-.FiltersWrapper {
+.FiltersGridWrapper {
   grid-area: filters;
-  background-color: white;
+}
+.FiltersWrapper {
   border-radius: 10px;
+  background-color: white;
+  padding: 10px;
 }
