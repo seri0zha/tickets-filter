@@ -12,6 +12,6 @@ export interface ITicket {
   price: number
 }
 
-export type ticketsType = ITicket[] | null;
+export type TicketsArray = ITicket[];
 
 export type currencyType = "RUB" | "USD" | "EUR";
