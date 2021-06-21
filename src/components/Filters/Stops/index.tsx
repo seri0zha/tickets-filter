@@ -10,7 +10,7 @@ const Stops = () => {
       <div className={styles.StopsWrapper}>
         <AllStops/>
         {Array.from(Array(4).keys()).map(num => <StopsButton stopsCount={num}/>)}
-    </div>
+      </div>
     </>
   );
 };
