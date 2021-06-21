@@ -3,7 +3,7 @@ import SelectButton from './SelectButton';
 import styles from './styles.module.css';
 
 const Currency = () => {
-  const currencyList: currencyType[] = ["RUB", "EUR", "USD"];
+  const currencyList: currencyType[] = ["RUB", "USD", "EUR"];
 
   return (
     <div className={styles.FiltersWrapper}>
