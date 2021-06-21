@@ -12,6 +12,7 @@
 
 body {
   background-color: #f3f7fa;
+  overflow: scroll;
 }
 
 body, button {
