@@ -1,7 +1,36 @@
-.button {
-  padding: 20px;
+.Button {
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: content-box;
 }
 
-.active {
-  border: 2px solid red;
+.Button {
+  cursor: pointer;
+}
+
+.Button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.Button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.ButtonSelected {
+  background-color: #2196f3;
+  color: white;
+  border: 1px solid #2196f3;
+}
+
+.ButtonNotSelected {
+  background-color: white;
+  color: #2196f3;
+  border: 1px solid #ddd;
+}
+
+.ButtonNotSelected:hover {
+  background-color: #f2fcff;
+  color: #2196f3;
+  border: 1px solid #2196f3;
 }

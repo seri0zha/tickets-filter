@@ -13,7 +13,9 @@ const SelectButton: FC<SelectButtonProps> = (props) => {
   const activeCurrency = useAppSelector(state => state.filters.currency);
   const dispatch = useAppDispatch();
 
-  const className = styles.button + " " + (activeCurrency === props.currency ? styles.active : "");
+  const className = 
+    styles.Button + " " + 
+    (activeCurrency === props.currency ? styles.ButtonSelected : styles.ButtonNotSelected);
   const onButtonClick = () => {
     dispatch(switchCurrency(props.currency));
   }
