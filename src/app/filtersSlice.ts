@@ -16,7 +16,7 @@ const initialState: FiltersState = {
     USD: 72.8,
     EUR: 86.3
   },
-  stops: new Array(4).fill(false)
+  stops: new Array(4).fill(true)
 }
 
 const filtersSlice = createSlice({
