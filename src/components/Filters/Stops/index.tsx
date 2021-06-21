@@ -1,5 +1,6 @@
 import Title from "../Title";
 import StopsButton from "./StopsButton";
+import AllStops from "./StopsButton/AllStops";
 import styles from "./styles.module.css";
 
 const Stops = () => {
@@ -7,7 +8,7 @@ const Stops = () => {
     <>
       <Title>КОЛИЧЕСТВО ПЕРЕСАДОК</Title>
       <div className={styles.StopsWrapper}>
-        <StopsButton stopsCount={-1}/>
+        <AllStops/>
         {Array.from(Array(4).keys()).map(num => <StopsButton stopsCount={num}/>)}
     </div>
     </>
