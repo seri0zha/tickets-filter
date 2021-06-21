@@ -1,5 +1,6 @@
 import { toggleAllStops } from "../../../../app/filtersSlice";
 import { useAppDispatch, useAppSelector } from "../../../../app/hooks";
+import CheckboxIcon from "./CheckboxIcon";
 import styles from "./styles.module.css";
 
 const AllStops = () => {
@@ -14,7 +15,7 @@ const AllStops = () => {
     <button 
       className={styles.button}
       onClick={onAllStopsButtonClick}>
-      <input type="checkbox" checked={checked}/>
+        <CheckboxIcon checked={checked}/>
       Все
     </button>
   );

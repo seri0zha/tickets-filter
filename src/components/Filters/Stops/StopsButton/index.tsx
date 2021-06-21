@@ -2,6 +2,7 @@ import { FC } from "react";
 import { toggleCurrentStop } from "../../../../app/filtersSlice";
 import { useAppDispatch, useAppSelector } from "../../../../app/hooks";
 import styles from "./styles.module.css";
+import CheckboxIcon from "./CheckboxIcon";
 
 interface ButtonProps {
   stopsCount: number,
@@ -23,7 +24,7 @@ const StopsButton: FC<ButtonProps> = (props) => {
     <button 
       className={styles.button}
       onClick={onButtonClick}>
-      <input type="checkbox" checked={checked}/>
+      <CheckboxIcon checked={checked}/>
       {buttonText}
     </button>
   );
