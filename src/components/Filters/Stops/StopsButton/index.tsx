@@ -20,10 +20,10 @@ const StopsButton: FC<ButtonProps> = (props) => {
     dispatch(toggleCurrentStop(props.stopsCount as number));
   };
 
-  const onOnlyButtonClick = (e: Event): void => {
+  const onOnlyButtonClick = (e: MouseEvent) => {
     e.stopPropagation();
     dispatch(selectOnlyStop(props.stopsCount));
-  }
+  };
 
   return (
     <button 
