@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { toggleCurrentStop } from "../../../../app/filtersSlice";
+import { selectOnlyStop, toggleCurrentStop } from "../../../../app/filtersSlice";
 import { useAppDispatch, useAppSelector } from "../../../../app/hooks";
 import styles from "./styles.module.css";
 import CheckboxIcon from "./CheckboxIcon";
@@ -20,12 +20,24 @@ const StopsButton: FC<ButtonProps> = (props) => {
     dispatch(toggleCurrentStop(props.stopsCount as number));
   };
 
+  const onOnlyButtonClick = (e: Event): void => {
+    e.stopPropagation();
+    dispatch(selectOnlyStop(props.stopsCount));
+  }
+
   return (
     <button 
-      className={styles.button}
+      className={styles.Button}
       onClick={onButtonClick}>
       <CheckboxIcon checked={checked}/>
-      {buttonText}
+      <span>
+        {buttonText}
+      </span>
+      <button 
+        className={styles.OnlyButton}
+        onClick={(e: any) => onOnlyButtonClick(e)}>
+        ТОЛЬКО
+      </button>
     </button>
   );
 };
