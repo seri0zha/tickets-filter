@@ -1,4 +1,4 @@
-.button {
+.Button {
   display: flex;
   align-items: center;
   background-color: white;
@@ -12,7 +12,23 @@
   color: #2196f3;
 }
 
-.button:hover {
+.Button:hover {
   cursor: pointer;
   background-color: #f1fcff;
+}
+.OnlyButton {
+  color: #2196f3;
+  visibility: hidden;
+  font-size: 12px;
+  border: 0;
+  background-color: inherit;
+  margin-left: auto;
+}
+
+.Button:hover .OnlyButton {
+  visibility: visible;
+}
+.Button:hover .OnlyButton:hover {
+  cursor: pointer;
+  color: #0051ff;
 }
