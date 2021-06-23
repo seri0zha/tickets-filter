@@ -2,4 +2,24 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 2.5em;
+}
+
+.TimeSectionWrapper > * {
+  flex: 1 auto 1;
+}
+.Stops {
+  text-align: center;
+  width: 100%;
+  margin: 0 30px;
+  font-size: 14px;
+  color:#9b9b9b;
+}
+
+.Stops hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cecece;
+  margin-top: 5px;
 }
