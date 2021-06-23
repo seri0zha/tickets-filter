@@ -1,10 +1,16 @@
+
 .TicketWrapper {
   background-color: white;
   border-radius: 10px;
   display: flex;
+  margin-bottom: 15px;
 }
-.PurchaseSection {
+.PurchaseSectionWrapper {
   padding: 15px;
   width: 25%;
   border-right: 1px solid #ddd;
+}
+.InfoSectionWrapper {
+  padding: 15px;
+  width: 100%;
 }
