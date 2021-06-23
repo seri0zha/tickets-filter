@@ -7,6 +7,7 @@ import Ticket from '../Ticket';
 import styles from './styles.module.css';
 import applyFilters from '../../api/applyFilters';
 import '../../index.css';
+import NotFound from '../NotFound';
 
 const Tickets = () => {
 
@@ -22,9 +23,11 @@ const Tickets = () => {
     dispatch(setTickets(fetchTickets()));
   }, [dispatch]);
 
+
   return (
     <div className={styles.TicketsWrapper + " gridTickets"}>
-      {tickets.map((ticket: ITicket) => 
+      {tickets.length === 0 ? <NotFound /> :
+      tickets.map((ticket: ITicket) => 
         <Ticket ticket={ticket}/>)}
     </div>
   );
