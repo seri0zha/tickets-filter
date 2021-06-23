@@ -13,7 +13,7 @@ const AllStops = () => {
   }
   return (
     <button 
-      className={styles.button}
+      className={styles.Button}
       onClick={onAllStopsButtonClick}>
         <CheckboxIcon checked={checked}/>
       Все
