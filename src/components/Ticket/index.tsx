@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { ITicket } from "../../app/types";
 import AirportSection from "./AirportSection";
+import CarrierLogo from "./CarrierLogo";
 import DateSection from "./DateSection";
 import PurchaseButton from "./PurchaseButton";
 import styles from "./styles.module.css";
@@ -14,6 +15,7 @@ const Ticket: FC<TicketProps> = ({ticket}) => {
   return (
     <div className={styles.TicketWrapper}>
       <div className={styles.PurchaseSectionWrapper}>
+        <CarrierLogo carrier={ticket.carrier}/>
         <PurchaseButton price={ticket.price}/>
       </div>
       <div className={styles.InfoSectionWrapper}>
