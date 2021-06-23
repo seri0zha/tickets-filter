@@ -1,9 +1,9 @@
-/* autoprefixer grid: autoplace */
-
 .HeaderWrapper {
-  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
 }
 
 .Logo {
-  max-height: 100%;
+  width: 150px;
 }
