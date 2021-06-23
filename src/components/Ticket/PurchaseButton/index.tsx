@@ -9,7 +9,7 @@ const PurchaseButton: FC<TicketProps> = ({price}) => {
   return (
     <button className={styles.button}>
       Купить 
-      <div> за {price}</div>
+      <div> за {price.toLocaleString()}&#8381;</div>
     </button>
   )
 };
