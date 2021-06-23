@@ -1,5 +1,7 @@
 import ticketsInput from "./tickets.json";
 
-export default () => {
+const getTickets = () => {
   return ticketsInput.tickets;
 }
+
+export default getTickets;
