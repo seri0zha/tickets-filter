@@ -20,7 +20,7 @@ const Tickets = () => {
   // get tickets from JSON on first render
   useEffect(() => {
     dispatch(setTickets(fetchTickets()));
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className={styles.TicketsWrapper + " gridTickets"}>
