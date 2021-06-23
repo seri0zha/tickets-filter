@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { ITicket } from "../../app/types";
 import AirportSection from "./AirportSection";
+import DateSection from "./DateSection";
 import PurchaseButton from "./PurchaseButton";
 import styles from "./styles.module.css";
 import TimeSection from "./TimeSection";
@@ -25,6 +26,9 @@ const Ticket: FC<TicketProps> = ({ticket}) => {
           originName={ticket.origin_name}
           destination={ticket.destination}
           destinationName={ticket.destination_name}/>
+        <DateSection 
+          departureDate={ticket.departure_date}
+          arrivalDate={ticket.arrival_date}/>
       </div>
     </div>
   )
