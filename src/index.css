@@ -8,7 +8,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   font-family: "Roboto";
 }
 
@@ -18,6 +17,7 @@ body {
 }
 
 body, button {
+  font-size: 16px;
   color: #525252;
 }
 
@@ -26,7 +26,7 @@ body, button {
 .grid {
   display: grid;
   grid-template-columns: 2fr 5fr;
-  grid-template-rows: 100px auto;
+  grid-template-rows: auto auto;
   grid-template-areas: 
     "header header"
     "filters tickets";
