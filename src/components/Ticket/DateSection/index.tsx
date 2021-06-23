@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { getFormatDate } from "../../../api/formatDateTime";
 import styles from "./styles.module.css";
 
 interface DateSectionProps {
@@ -10,10 +11,10 @@ const DateSection: FC<DateSectionProps> = (props) => {
   return (
     <div className={styles.DateSectionWrapper}>
       <div>
-        {props.departureDate}
+        {getFormatDate(props.departureDate)}
       </div>
       <div>
-        {props.arrivalDate}
+        {getFormatDate(props.arrivalDate)}
       </div>
     </div>
   )
