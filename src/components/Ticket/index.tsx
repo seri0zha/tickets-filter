@@ -3,7 +3,7 @@ import { ITicket } from "../../app/types";
 import AirportSection from "./AirportSection";
 import CarrierLogo from "./CarrierLogo";
 import DateSection from "./DateSection";
-import PurchaseButton from "./PurchaseButton";
+import PurchaseButton from "../ButtonOrange";
 import styles from "./styles.module.css";
 import TimeSection from "./TimeSection";
 
@@ -16,7 +16,10 @@ const Ticket: FC<TicketProps> = ({ticket}) => {
     <div className={styles.TicketWrapper}>
       <div className={styles.PurchaseSectionWrapper}>
         <CarrierLogo carrier={ticket.carrier}/>
-        <PurchaseButton price={ticket.price}/>
+        <PurchaseButton>
+          Купить 
+          <div> за {ticket.price.toLocaleString()}&#8381;</div>
+        </PurchaseButton>
       </div>
       <div className={styles.InfoSectionWrapper}>
         <TimeSection
