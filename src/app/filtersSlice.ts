@@ -36,6 +36,11 @@ const filtersSlice = createSlice({
     },
     toggleCurrentStop(state, action: PayloadAction<number>) {
       state.stops[action.payload] = !state.stops[action.payload];
+    },
+    selectOnlyStop(state, action: PayloadAction<number>) {
+      state.stops = new Array(4).fill(false).map((el, index) => {
+        return index === action.payload ? true : false;
+      })
     }
   }
 })
@@ -44,4 +49,5 @@ export default filtersSlice.reducer;
 export const { 
   switchCurrency, 
   toggleAllStops, 
-  toggleCurrentStop } = filtersSlice.actions;
+  toggleCurrentStop,
+  selectOnlyStop } = filtersSlice.actions;
